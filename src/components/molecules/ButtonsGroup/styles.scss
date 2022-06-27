@@ -1,0 +1,24 @@
+@import "src/assets/styles/var";
+
+.buttons-group {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(169, 169, 169, 0.1);
+  border-radius: 10px;
+
+  .button:first-child {
+    margin-right: 5px;
+  }
+
+  .button {
+    width: 180px;
+    height: 37px;
+  }
+
+  &--is-active {
+    background-color: $white;
+    box-shadow: 0 0 1px 2px rgb(169 169 169 / 20%);
+  }
+}
+

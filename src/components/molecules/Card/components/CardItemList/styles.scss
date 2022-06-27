@@ -1,0 +1,19 @@
+
+.card-item-list {
+  $self: &;
+
+  padding: 8px 0 8px 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "—"
+  }
+
+  &--is-open::before {
+    content: "\2713"
+  }
+}
