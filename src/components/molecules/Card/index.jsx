@@ -18,7 +18,9 @@ const Card = ({ price, tagText, features }) => {
             <ul className="card-content">
                 {features.map((feature, i) => <CardItemList data={feature} key={i} /> )}
             </ul>
-            <Button text={isPremium ? "try premium" :"join"} className={isPremium ? "button--premium" : "button--default"} />
+            <Button text={isPremium ? "try premium" :"join"} className={isPremium ? "button--premium" : "button--default"} >
+                <span>&rarr;</span>
+            </Button>
         </div>
     );
 };
